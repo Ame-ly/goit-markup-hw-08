@@ -1,0 +1,92 @@
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  // @media screen and (max-width: 767px) {
+  //   justify-content: center;
+  // }
+
+    @media screen and (max-width: 767px) {
+    margin-bottom: -30px;
+    // margin-right: -30px;
+  }
+ 
+  & .item {
+    // margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      //  margin-right: 30px;
+      width: calc((100% - 30px) / 2);
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 60px) / 3) ;
+      width: 226px;
+    }
+  }
+
+  & .item:not(:nth-child(2n)) {
+    @media screen and (max-width: 767px) {
+      margin-right: 30px;
+    }
+  }
+
+  & .item:not(:nth-child(3n)) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 30px;
+    }
+  }
+
+  & .item:nth-last-child(-n + 2) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & .item:not(:nth-last-child(-n + 3)) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.clients-list > .item {
+  @media screen and (min-width: 1200px) {
+     width: calc((100%-150px) / 6);
+     width: 170px;
+  }
+
+}
+.clients-list > .item + .item {
+  @media screen and (min-width: 1200px) {
+  margin-left: 30px;
+}
+}
+.clients-list .company-link {
+
+  @extend %flex;
+  align-items: center;
+  justify-content: center;
+
+  // @media screen and (min-width: 768px) {
+  //    width: 226px;
+  //  }
+  @media screen and (min-width: 1200px) {
+     width: 170px;
+   }
+
+  height: 90px;
+
+  color: $social-link-color-default;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+
+  fill: currentColor;
+
+  transition: color $time $timing-function, fill $time $timing-function;
+}
+
+.clients-list .company-link:hover,
+.clients-list .company-link:focus {
+  color: $accent-text-color;
+  fill: $accent-text-color;
+}

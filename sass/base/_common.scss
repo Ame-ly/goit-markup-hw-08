@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  outline: 2px solid red;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  @include fonts(14px, 400, 1.71, 0.03em);
+
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-margin {
+  margin-top: 0;
+}
+.text {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.item {
+  display: block;
+}
+
+// .flex-footer {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+.navigate,
+.header-container,
+.social-list,
+.menu-item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// .navigate {
+//   align-items: center;
+// }
+// .right-nav {
+//   display: flex;
+// align-items: center;
+// justify-content: flex-end;
+// }
+
+// .contacts-top .menu-item {
+//   display: flex;
+// }
+
+.about,
+.benefits,
+.team,
+.section-portfolio,
+.clients {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+
+.section-portfolio,
+.clients,
+.about,
+.benefits {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.section-tittle {
+  margin-top: 0;
+
+ 
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-family: $ff;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  font-family: $ff;
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+   }
+ 
+  
+  color: $title-text-color;
+}

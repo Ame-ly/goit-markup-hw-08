@@ -1,0 +1,20 @@
+@import "./utils/variablse";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/fonts";
+@import "./base/common";
+
+@import "./components/buttons";
+@import "./components/links";
+@import ".//components/_forms";
+@import ".//components/modal";
+
+@import "./layouts.scss/page-header";
+@import "./layouts.scss/hero";
+@import "./layouts.scss/benefits";
+@import "./layouts.scss/about";
+@import "./layouts.scss/team";
+@import "./layouts.scss/clients";
+@import "./layouts.scss/footer";
+@import "./layouts.scss/portfolio";

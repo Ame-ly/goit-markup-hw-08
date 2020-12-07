@@ -1,0 +1,138 @@
+.header {
+ 
+  border-bottom: 1px solid $division-line-color;
+  background-color: var(--dark-bg);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
+}
+
+.menu-item .svg-item {
+  margin-right: 10px;
+  fill: inherit;
+}
+
+.header-menu {
+   @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  @media screen and (min-width: 1200px) {
+    
+    & .menu-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.site-nav {
+  @media screen and (max-width: 767px) {
+    border-top: 1px solid $division-line-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.166;
+    & .menu-item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 88px;
+    & .menu-item + .menu-item {
+      margin-left: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    & .menu-item + .menu-item {
+      margin-left: 50px;
+    }
+  }
+
+  // @extend %flex;
+  // flex-direction: column;
+}
+
+// .site-nave .menu-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+.page-futer > .white-link {
+  color: $white;
+}
+
+.social-list .social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contacts-top {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.166;
+    color: $main-text-color;
+
+    & .menu-item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: end;
+    display: flex;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    margin-left: 84px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & .menu-item + .menu-item {
+      margin-top: 10px;
+    }
+  }
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  background-color: $white;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    // height: 400px;
+
+    text-align: center;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

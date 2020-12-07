@@ -1,0 +1,131 @@
+.btn {
+  display: inline-block;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  /* min-width: 103px; */
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  background-color: $for-team;
+  cursor: pointer;
+
+  transition: color $time $timing-function,
+    background-color $time $timing-function;
+
+  &:hover,
+  &:focus,
+  &:active {
+    display: inline-block;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    /* min-width: 103px; */
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $white;
+    background-color: $accent-text-color;
+  }
+}
+
+.main-btn {
+  display: inline-block;
+  text-align: center;
+  border: 0px solid transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 32px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background-color: $accent-text-color;
+  color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    /* outline: none; */
+    box-shadow: none;
+    background-color: $white;
+    color: $accent-text-color;
+  }
+}
+// .footer-right {
+//   display: inline-flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+.footer-button {
+  display: inline-flex;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+  max-width: 200px;
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+
+  color: $white;
+  background: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    background-color: $white;
+    color: $accent-text-color;
+  }
+
+  &:focus .footer-icon {
+    fill: $accent-text-color;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 10px, 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

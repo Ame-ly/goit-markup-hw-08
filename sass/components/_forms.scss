@@ -1,0 +1,215 @@
+.form-field {
+  display: block;
+  position: relative;
+
+  background-color: transparent;
+
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  & .icon {
+    position: absolute;
+    display: inline-block;
+
+    top: 50%;
+    left: 0;
+    fill: $title-text-color;
+    /* background-color: transparent; */
+    transform: translate(15px, -50%);
+  }
+
+  &:focus-within .input ~ .icon {
+    fill: $accent-text-color;
+  }
+
+  & .caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    color: var(--primary-text-color);
+    transform: translate(42px, -50%);
+    transition: transform $time $timing-function;
+    /* user-select: none; */
+  }
+
+  & .input {
+    display: block;
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  &:focus-within .input + .caption {
+    color: $accent-text-color;
+    transform: translate(0px, -38px);
+  }
+
+  & .input:not(:placeholder-shown) ~ .caption {
+    transform: translate(0px, -38px);
+  }
+}
+
+.form-field:focus-within .input,
+.form-field-area:focus-within .input {
+  border: 1px solid $accent-text-color;
+  outline-width: 0px;
+  border-radius: 4px;
+}
+
+.form-field-area {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  font-size: 12px;
+
+  & .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: var(--primary-text-color);
+    transform: translate(16px, 100%);
+    transition: transform $time $timing-function;
+    /* user-select: none; */
+  }
+
+  & .input {
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+  }
+
+  &:focus-within > .caption {
+    color: $accent-text-color;
+    transform: translate(0px, -18px);
+  }
+
+  & .input:not(:placeholder-shown) ~ .caption {
+    transform: translate(0px, -18px);
+  }
+}
+
+.field-checkbox {
+  display: block;
+  position: relative;
+
+  @media screen and (max-width: 1199px) {
+  }
+  text-align: end;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+  }
+  & .checkbox-caption {
+    font-size: 12px;
+  }
+}
+
+.checkbox-icon::before {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  @media screen and (min-width: 1200px) {
+    left: 7px;
+  }
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+
+  background-size: 16px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url(../images/Vector-policy.svg);
+}
+
+.checkbox:checked + .checkbox-icon::before {
+  background-image: url(../images/icon-check.svg);
+}
+
+.link-policy {
+  border-bottom: 1px solid $accent-text-color;
+  color: $accent-text-color;
+  text-decoration: none;
+}
+
+.submit-button {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 55px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white;
+  background: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-text-color;
+    background-color: $white;
+  }
+}
+.form-field-footer {
+  display: inline-flex;
+}
+
+.footer-input {
+  width: 100%;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $bc-color;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+// .input:not(:placeholder-shown):focus:valid {
+//   color: green;
+//   border-color: green;
+// }
+
+// .input:not(:placeholder-shown):focus:invalid,
+// .input:not(:placeholder-shown):invalid {
+//   color: red;
+//   border-color: red;
+// }
