@@ -38,10 +38,16 @@
   max-width: 450px;
   width: 100%;
   padding: 40px;
+  margin: auto;
+  
+
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
     left: 50%;
+     opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transition: transform, opacity $time, $time $timing-function;
   }
 
   display: flex;
@@ -51,18 +57,14 @@
     max-width: 528px;
     width: 100%;
     // min-height: 581px;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
-    transition: transform, opacity $time, $time $timing-function;
+   
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 450px;
     width: 100%;
     //  min-height: 609px;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
-    transition: transform, opacity $time, $time $timing-function;
+   
   }
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

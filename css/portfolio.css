@@ -275,7 +275,7 @@ img {
   fill: #2196f3;
 }
 
-.menu-button {
+.header-container .menu-button {
   display: inline-flex;
   margin: 10px, 0;
   padding: 0;
@@ -283,22 +283,26 @@ img {
   background-color: transparent;
 }
 
-.menu-button .icon-close {
+.header-container .menu-button .icon-close {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.header-container .menu-button.is-open .icon-close {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.header-container .menu-button.is-open .icon-menu {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .header-container .menu-button {
     display: none;
   }
+}
+
+.header-container .menu-button:hover, .header-container .menu-button:focus {
+  fill: #2196f3;
 }
 
 .link-logo {
@@ -654,14 +658,11 @@ img {
   background-color: #ffffff;
 }
 
-.form-field-footer {
-  display: inline-flex;
-}
-
 .footer-input {
   width: 100%;
   width: 358px;
   height: 50px;
+  margin-top: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -673,6 +674,14 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-input {
+    max-width: 450px;
+    min-width: 200px;
+    width: 100%;
+  }
 }
 
 .header {
@@ -790,6 +799,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-container {
+    justify-content: flex-start;
+  }
+}
+
 .header-menu {
   background-color: #ffffff;
 }
@@ -854,8 +869,15 @@ img {
   .list-portfolio > .item-card:not(:nth-child(2n)) {
     margin-right: 30px;
   }
-  .list-portfolio > .item-card:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+  .list-portfolio > .item-card:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1097,7 +1119,7 @@ img {
   .footer-tablet {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 

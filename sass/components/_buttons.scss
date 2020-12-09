@@ -107,7 +107,7 @@
   }
 }
 
-.menu-button {
+.header-container .menu-button {
   display: inline-flex;
   margin: 10px, 0;
   padding: 0;
@@ -127,5 +127,10 @@
   }
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
   }
 }

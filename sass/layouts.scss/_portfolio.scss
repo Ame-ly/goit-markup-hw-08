@@ -33,12 +33,20 @@
 
     & > .item-card:not(:nth-child(2n)) {
       margin-right: 30px;
+      
     }
 
-    & > .item-card:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+    & > .item-card:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
   }
+  @media screen and (min-width: 1200px) {
+     display: flex;
+    flex-wrap: wrap;
+    
+
+  }
+
 
   & .overlay {
     position: relative;

@@ -38,6 +38,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  // background-color: rgb(223, 226, 28);
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -149,3 +150,7 @@ img {
   
   color: $title-text-color;
 }
+
+// .footer-right-flax{
+//   justify-content: flex-start;
+// }
