@@ -15,23 +15,22 @@
     <header class="header">
             <nav class="container header-container">
                 <a href="./index.html" class="link-logo"><span>Web</span>Studio</a>
-                <button type="button" class="menu-button is-open" 
+                <button type="button" class="menu-button" 
                 aria-expanded="false" 
                 aria-controls="header-menu" 
                 data-menu-button >
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">               
-                        <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
                         <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/sprite.svg#icon-close"></use>               
                     </svg>  
                     
                 </button>
-                <div class="header-menu is-open" id="header-menu" data-menu>
+                <div class="header-menu" id="header-menu" data-menu>
                     <ul class="list menu site-nav">
                         <li class="menu-item"><a href="./index.html" class=" link  link-current">Студия</a></li>
                         <li class="menu-item"><a href="./portfolio.html" class="link menu-link">Портфолио</a></li>
                         <li class="menu-item"><a href="#contacts" class="link menu-link ">Контакты</a></li>
                     </ul>
-                    
                     <ul class="list menu contacts-top">
                         <li class="menu-item">
                             <a href="mailto:info@devstudio.com" class="link menu-link link-contacts">
@@ -50,6 +49,8 @@
                             </a>
                         </li>
                     </ul>
+                   
+                    
                 </div>           
             </nav>        
    </header>
@@ -195,7 +196,8 @@
 
                             src="./images/team/pd.jpg"
                             alt="Игорь Демьяненко"
-                    
+                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                             
                         />
                         <div class="info">
                             <h3  class="p-title no-margin">Игорь Демьяненко</h3>
@@ -514,14 +516,14 @@
                 </div>
     
                 <div class="footer-right">
-                   <div class="footer-right-flax">
-                         <h2 class="title">Подпишитесь на рассылку</h2>
-                        <label class="form-field-footer">
-                            <input class="footer-input" type="email" name="email" placeholder="E-mail">
-                        </label>
-                   </div>
-                   
-    
+                   <!-- <div class="footer-right-flax">
+                
+                   </div> -->
+                    <!-- <h2 class="title">Подпишитесь на рассылку</h2> -->
+                    <label class="form-field-footer">
+                        <span class="title">Подпишитесь на рассылку</span>
+                        <input class="footer-input" type="email" name="email" placeholder="E-mail">
+                    </label>
                     <button class="footer-button" type="submit">Подписаться
                         <svg class="footer-icon" width="24" height="24">
                             <use href="./images/sprite.svg#icon-send"></use>
