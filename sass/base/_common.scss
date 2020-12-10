@@ -2,21 +2,17 @@ html {
   box-sizing: border-box;
 }
 
-*,
-::after,
-::before {
-  box-sizing: inherit;
-  // outline: 2px solid red;
-}
+// *,
+// ::after,
+// ::before {
+//   box-sizing: inherit;
+//   outline: 2px solid red;
+// }
 
 body {
   font-family: "Roboto", sans-serif;
   @include fonts(14px, 400, 1.71, 0.03em);
 
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
 }
 
 img {
@@ -57,10 +53,6 @@ img {
   display: block;
 }
 
-// .flex-footer {
-//   display: flex;
-//   align-items: baseline;
-// }
 
 .navigate,
 .header-container,
@@ -72,18 +64,6 @@ img {
   }
 }
 
-// .navigate {
-//   align-items: center;
-// }
-// .right-nav {
-//   display: flex;
-// align-items: center;
-// justify-content: flex-end;
-// }
-
-// .contacts-top .menu-item {
-//   display: flex;
-// }
 
 .about,
 .benefits,
@@ -123,10 +103,10 @@ img {
   margin: -1px;
   overflow: hidden;
 }
+
 .section-tittle {
   margin-top: 0;
-
- 
+ color: $title-text-color;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
@@ -145,12 +125,5 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-   }
- 
-  
-  color: $title-text-color;
+  }
 }
-
-// .footer-right-flax{
-//   justify-content: flex-start;
-// }

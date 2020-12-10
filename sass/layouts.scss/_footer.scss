@@ -29,25 +29,19 @@
   
  .flex-footer {
    display: flex;
-  
-  align-items: center;
    padding-bottom: 60px;
   padding-top: 60px;
  }
  
   .footer-left {
-
   margin-right: 70px;
 }
 
   .footer-right {
     display: flex;
-   align-items: center;
+  //  align-items: center;
     margin-left: 93px;
-
-    
   }
-  
 }
 
 
@@ -84,12 +78,6 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
-
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.142;
-  // letter-spacing: 0.03em;
-  
 }
 
 .social-list {
@@ -133,15 +121,6 @@
   }
 }
 
-// .footer-left,
-// .center-footer {
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//  flex-direction: column;
-//   }
-  
-
-// }
 
 .footer-tablet {
   @media screen and (min-width: 768px) and (max-width: 1199px) {

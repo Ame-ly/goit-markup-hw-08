@@ -29,12 +29,6 @@ html {
   box-sizing: border-box;
 }
 
-*,
-::after,
-::before {
-  box-sizing: inherit;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -149,8 +143,8 @@ img {
 
 .section-tittle {
   margin-top: 0;
-  font-family: "Roboto", sans-serif;
   color: #212121;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 1199px) {
@@ -237,7 +231,9 @@ img {
 
 .footer-button {
   display: inline-flex;
+  height: 50px;
   max-width: 200px;
+  margin-top: 42px;
   padding: 10px 29px;
   font-weight: 700;
   font-size: 16px;
@@ -499,7 +495,6 @@ img {
   top: 50%;
   left: 0;
   fill: #212121;
-  /* background-color: transparent; */
   transform: translate(15px, -50%);
 }
 
@@ -658,11 +653,22 @@ img {
   background-color: #ffffff;
 }
 
-.footer-input {
-  width: 100%;
+.form-field-footer {
+  margin-right: auto;
+  margin-left: auto;
   width: 358px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-field-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer-input {
+  display: inline-block;
   height: 50px;
-  margin-top: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -674,6 +680,25 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-input {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer-input {
+    width: 358px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -704,6 +729,10 @@ img {
 .menu-item .svg-item {
   margin-right: 10px;
   fill: inherit;
+}
+
+.header-menu {
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -770,13 +799,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts-top {
-    justify-content: end;
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-top {
     flex-direction: column;
@@ -784,9 +806,6 @@ img {
     margin-top: 21px;
     margin-bottom: 21px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-top .menu-item + .menu-item {
     margin-top: 10px;
   }
@@ -799,13 +818,8 @@ img {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1200px) {
-  .header-container {
-    justify-content: flex-start;
-  }
-}
-
 .header-menu {
+  z-index: 1000;
   background-color: #ffffff;
 }
 
@@ -857,10 +871,17 @@ img {
   margin-left: 8px;
 }
 
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-portfolio > .item-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-portfolio {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 40px;
   }
   .list-portfolio .item-card {
@@ -894,14 +915,32 @@ img {
   top: 0;
   bottom: 0;
   margin: 0;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
-  padding: 63px 24px;
+  letter-spacing: 0.03em;
   color: #ffffff;
   background: #2196f3;
   transform: translateY(100%);
   transition: transform 250ms;
+}
+
+@media screen and (max-width: 767px) {
+  .list-portfolio .description {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-portfolio .description {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-portfolio .description {
+    padding: 63px 24px;
+  }
 }
 
 .list-portfolio .img-card:hover .description,
@@ -976,22 +1015,26 @@ img {
   }
 }
 
+.portfolio-img {
+  width: 100%;
+}
+
 @media screen and (max-width: 480px) {
-  .img-portfolio {
+  .portfolio-img {
     width: 450px;
     height: 294px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .img-portfolio {
+  .portfolio-img {
     width: 354px;
     height: 294px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .img-portfolio {
+  .portfolio-img {
     width: 370px;
     height: 294px;
   }
@@ -1020,7 +1063,6 @@ img {
 @media screen and (min-width: 1200px) {
   .flex-footer {
     display: flex;
-    align-items: center;
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -1029,7 +1071,6 @@ img {
   }
   .footer-right {
     display: flex;
-    align-items: center;
     margin-left: 93px;
   }
 }

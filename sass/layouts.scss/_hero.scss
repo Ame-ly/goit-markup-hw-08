@@ -35,9 +35,7 @@
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       background-image: $gradient, url('/images/hero/mobile/img-hero@2x.jpg');
     }
-    @media screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
-      background-image: $gradient, url('/images/hero/mobile/img-hero@3x.jpg');
-    }
+
   }
 
   @media screen and(min-width: 768px) {
@@ -46,23 +44,21 @@
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       background-image: $gradient, url('/images/hero/tablet/img-hero@2x.jpg');
     }
-    @media screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
-      background-image: $gradient, url('/images/hero/tablet/img-hero@3x.jpg');
-    }
+   
   }
      @media screen and(min-width: 1200px) {
     background-image: $gradient, url('/images/hero/desktop/img-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       background-image: $gradient, url('/images/hero/desktop/Img-hero@2x.jpg');
     }
-    @media screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
-      background-image: $gradient, url('/images/hero/desktop/Img-hero@3x.jpg');
-    }
+   
   }  
 }
 
 .page-title {
   margin-bottom: 30px;
+  text-transform: uppercase;
+  color: $white;
 
   @media screen and (max-width: 767px) {
     font-size: 26px;
@@ -72,12 +68,5 @@
   @media screen and (min-width: 768px) {
     font-family: $ff;
     @include fonts(44px, 900, 1.364, 0.06em);
-  }
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.364;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $white;
+  } 
 }

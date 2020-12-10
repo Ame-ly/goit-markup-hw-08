@@ -1,8 +1,8 @@
 .header {
- 
   border-bottom: 1px solid $division-line-color;
   background-color: var(--dark-bg);
 }
+
 
 .list {
   list-style: none;
@@ -22,6 +22,7 @@
 }
 
 .header-menu {
+   flex-grow: 1;
    @media screen and (max-width: 767px) {
       display: none;
     }
@@ -57,14 +58,7 @@
       margin-left: 50px;
     }
   }
-
-  // @extend %flex;
-  // flex-direction: column;
 }
-
-// .site-nave .menu-item:not(:last-child) {
-//   margin-right: 50px;
-// }
 
 .page-futer > .white-link {
   color: $white;
@@ -87,19 +81,12 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    justify-content: end;
-    display: flex;
-  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     margin-left: 84px;
     margin-top: 21px;
     margin-bottom: 21px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & .menu-item + .menu-item {
+      & .menu-item + .menu-item {
       margin-top: 10px;
     }
   }
@@ -110,14 +97,11 @@
   position: relative;
   display: flex;
   align-items: center;
-   justify-content: space-between;
-  @media screen and (min-width: 1200px) {
- justify-content: flex-start;
-  }
- 
+  justify-content: space-between;
 }
 
 .header-menu {
+  z-index: 1000;
   background-color: $white;
 
   @media screen and (max-width: 767px) {
@@ -128,7 +112,6 @@
     left: 0;
     width: 100%;
     // height: 400px;
-
     text-align: center;
 
     &.is-open {
