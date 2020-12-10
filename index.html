@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <title>WebStudio :: Студия</title>
 </head>
  
 <body>
@@ -129,8 +130,7 @@
                 <h2  class="section-tittle no-margin">Чем занимаемся</h2>
                 <ul class="list menu menu-offers">                   
                     <li class="item">
-                         <a class="link" href="">
-                            
+                         <a class="link" href="./portfolio.html">  
                         <img 
                           srcset=
                             "./images/about/img1.jpg 1x, 
@@ -146,7 +146,7 @@
                     
                     </li>
                     <li class="item">
-                       <a class="link" href="">
+                       <a class="link" href="./portfolio.html">
                         <img 
                         srcset=
                             "./images/about/img2.jpg 1x, 
@@ -163,7 +163,7 @@
                      
                     </li>
                     <li class="item">
-                        <a class="link" href="">
+                        <a class="link" href="./portfolio.html">
                         <img 
                         srcset=
                             "./images/about/img3.jpg 1x, 
@@ -188,17 +188,15 @@
                 <h2 class="section-tittle no-margin">Наша команда</h2>
                 <ul class="list menu-team">                   
                     <li class="team-card">
-                        <img class="team-image"
-                         srcset=
-                            "./images/team/pd.jpg 1x, 
-                            ./images/team/pd@2x.jpg 2x, 
-                            ./images/team/pd@3x.jpg 3x"
-
-                            src="./images/team/pd.jpg"
-                            alt="Игорь Демьяненко"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
-                             
-                        />
+                        <picture>
+                            <source srcset="/images/team/desktop/pd.jpg 1x,
+                                            /images/team/desktop/pd@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="/images/team/tablet/pd.jpg 1x,
+                                            /images/team/tablet/pd@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="/images/team/mobile/pd.jpg 1x,
+                                            /images/team/mobile/pd@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img class="team-img" src="/images/team/desktop/pd.jpg" alt="Фото Игоря Демьяненко" />
+                        </picture>
                         <div class="info">
                             <h3  class="p-title no-margin">Игорь Демьяненко</h3>
                             <p lang="en" class="text no-margin">Product Designer</p>
@@ -240,15 +238,15 @@
                     </li>
                 
                     <li class="team-card">
-                        <img class="team-image"
-                         srcset=
-                            "./images/team/fd.jpg 1x, 
-                            ./images/team/fd@2x.jpg 2x, 
-                            ./images/team/fd@3x.jpg 3x"
-
-                            src="./images/team/fd.jpg"
-                            alt="Ольга Репина"
-                       />
+                        <picture>
+                            <source srcset="/images/team/desktop/fd.jpg 1x,
+                                            /images/team/desktop/fd@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="/images/team/tablet/fd.jpg 1x,
+                                            /images/team/tablet/fd@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="/images/team/mobile/fd.jpg 1x,
+                                            /images/team/mobile/fd@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img class="team-img" src="/images/team/desktop/fd.jpg" alt="Фото Ольги Репиной" />
+                        </picture>
                         <div class="info">
                             <h3  class="p-title no-margin">Ольга Репина</h3>
                             <p lang="en" class="text no-margin">Frontend Developer</p>
@@ -290,15 +288,15 @@
                     </li>
                 
                     <li class="team-card">
-                        <img class="team-image"
-                        srcset=
-                            "./images/team/market.jpg 1x, 
-                            ./images/team/market@2x.jpg 2x, 
-                            ./images/team/market@3x.jpg 3x"
-
-                            src="./images/team/market.jpg"
-                            alt="Николай Тарасов"
-                        />
+                        <picture>
+                            <source srcset="/images/team/desktop/market.jpg 1x,
+                                            /images/team/desktop/market@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="/images/team/tablet/market.jpg 1x,
+                                            /images/team/tablet/market@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="/images/team/mobile/market.jpg 1x,
+                                             /images/team/mobile/market@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img class="team-img" src="/images/team/desktop/market.jpg" alt="Фото Николая Тарасова" />
+                        </picture>
                         <div class="info">
                             <h3 class="p-title no-margin">Николай Тарасов</h3>
                             <p lang="en" class="text no-margin">Marketing</p>
@@ -340,15 +338,15 @@
                     </li>
                 
                     <li class="team-card">                   
-                        <img class="team-image" 
-                         srcset=
-                            "./images/team/ui.jpg 1x, 
-                            ./images/team/ui@2x.jpg 2x, 
-                            ./images/team/ui@3x.jpg 3x"
-
-                            src="./images/team/ui.jpg"
-                            alt="Михаил Ермаков"
-                        />
+                        <picture>
+                            <source srcset="/images/team/desktop/ui.jpg 1x,
+                                            /images/team/desktop/ui@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="/images/team/tablet/ui.jpg 1x,
+                                             /images/team/tablet/ui@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="/images/team/mobile/ui.jpg 1x,
+                                             /images/team/mobile/ui@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img  class="team-img" src="/images/team/desktop/ui.jpg" alt="Фото Михаила Ермакова" />
+                        </picture>
                         <div class="info">
                             <h3 class="p-title no-margin">Михаил Ермаков</h3>
                             <p lang="en" class="text no-margin">UI Designer</p>
@@ -572,7 +570,7 @@
                     <input class="checkbox visually-hidden" type="checkbox" name="policy">
                     <span class="checkbox-icon"></span>
                     <span class="checkbox-caption">Соглашаюсь с рассылкой и принимаю
-                        <a class="link-policy" href="">Условия договора</a>
+                        <a class="link-policy" href="http://google.com">Условия договора</a>
                     </span>
                 </label>
 
