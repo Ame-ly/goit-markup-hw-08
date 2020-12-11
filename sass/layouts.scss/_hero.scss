@@ -31,25 +31,25 @@
   background-size: cover;
   
  @media screen and(max-width: 767px) {
-    background-image: $gradient, url('./images/hero/mobile/img-hero.jpg');
+    background-image: $gradient, url('/images/hero/mobile/img-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: $gradient, url('./images/hero/mobile/img-hero@2x.jpg');
+      background-image: $gradient, url('/images/hero/mobile/img-hero@2x.jpg');
     }
 
   }
 
   @media screen and(min-width: 768px) {
      height: 600px;
-    background-image: $gradient, url('./images/hero/tablet/img-hero.jpg');
+    background-image: $gradient, url('/images/hero/tablet/img-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: $gradient, url('./images/hero/tablet/img-hero@2x.jpg');
+      background-image: $gradient, url('/images/hero/tablet/img-hero@2x.jpg');
     }
    
   }
      @media screen and(min-width: 1200px) {
-    background-image: $gradient, url('./images/hero/desktop/img-hero.jpg');
+    background-image: $gradient, url('/images/hero/desktop/img-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: $gradient, url('./images/hero/desktop/Img-hero@2x.jpg');
+      background-image: $gradient, url('/images/hero/desktop/Img-hero@2x.jpg');
     }
    
   }  
