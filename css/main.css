@@ -35,6 +35,7 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  overflow-x: hidden;
 }
 
 img {
@@ -595,12 +596,27 @@ img {
 
 .field-checkbox .checkbox-caption {
   font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .field-checkbox .checkbox-caption {
+    line-height: 1.172;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .field-checkbox .checkbox-caption {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .checkbox-icon::before {
   position: absolute;
   top: 4px;
-  left: 0px;
+  left: 5px;
   display: inline-block;
   content: "";
   width: 16px;
@@ -614,7 +630,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .checkbox-icon::before {
-    left: 7px;
+    left: 0;
   }
 }
 
@@ -759,7 +775,8 @@ img {
   max-width: 450px;
   width: 100%;
   padding: 40px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1080,7 +1097,6 @@ img {
   .menu-benefits {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
 }
 
@@ -1119,7 +1135,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-benefits > .item {
-    width: calc(100% / 2 - 30px);
+    width: calc((100%  - 30px) / 2);
   }
 }
 
@@ -1373,21 +1389,18 @@ img {
 @media screen and (max-width: 480px) {
   .team-img {
     width: 450px;
-    height: 460px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team-img {
     width: 354px;
-    height: 374px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-img {
     width: 270px;
-    height: 260px;
   }
 }
 
@@ -1776,6 +1789,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .img-card.tehno {
+    height: 404px;
+  }
+}
+
 .portfolio-img {
   width: 100%;
 }
@@ -1783,21 +1802,18 @@ img {
 @media screen and (max-width: 480px) {
   .portfolio-img {
     width: 450px;
-    height: 294px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-img {
     width: 354px;
-    height: 294px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-img {
     width: 370px;
-    height: 294px;
   }
 }
 /*# sourceMappingURL=main.css.map */

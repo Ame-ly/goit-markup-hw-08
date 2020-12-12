@@ -14,7 +14,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    // margin-right: -30px;
     // margin-bottom: -30px;
   }
 
@@ -58,12 +58,13 @@
 
   & > .item {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc(100% / 2 - 30px);
+      width: calc((100%  - 30px) / 2);
     }
   }
 }
 
 .menu-benefits {
+  
   @media screen and (min-width: 1200px) {
     & > .item {
   width: calc((100% - 3 * 30px) / 4);

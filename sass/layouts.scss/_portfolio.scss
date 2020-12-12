@@ -1,11 +1,12 @@
 .menu-filters {
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin-bottom: 30px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
@@ -23,12 +24,13 @@
    display: flex;
     flex-wrap: wrap;
 
+
    & > .item-card:not(:last-child) {
       margin-bottom: 30px;
     }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
+    // margin-right: -30px;
     margin-top: 40px;
 
     & .item-card {
@@ -91,6 +93,7 @@
   & .img-card:focus .description {
     transform: translateY(0);
   }
+
   & .img-card:hover,
   & .img-card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -137,7 +140,7 @@
 
 .list-portfolio  .item-card {
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   background: $white;
 
   @media screen and(min-width: 1200px) {
@@ -155,19 +158,25 @@
   }
 }
 
+.img-card.tehno {
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+   height: 404px;
+ }
+}
+
 .portfolio-img {
    width: 100%;
 
   @media screen and(max-width: 480px) {
     width: 450px;
-    height: 294px;
+    // height: 294px;
   }
   @media screen and(min-width: 768px) {
     width: 354px;
-    height: 294px;
+    // height: 294px;
   }
   @media screen and(min-width: 1200px) {
     width: 370px;
-    height: 294px;
+    // height: 294px;
   }
 }
