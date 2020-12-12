@@ -207,10 +207,12 @@
 .footer-input {
   display: inline-block;
   height: 50px;
-
+margin-right: auto;
+  margin-left: auto;
  
   padding-left: 16px;
   @media screen and (min-width: 1200px) {
+     width: 358px;
     margin-top: 20px;
   }
  @media screen and (max-width: 767px){
@@ -218,9 +220,8 @@
      margin-top: 20px;
   }
 
-  @media screen and (min-width: 767px){
-    width: 358px;
-     
+  @media screen and (min-width: 767px) and (max-width: 1199px){
+    width: 450px;
   }
 
   @media screen and (max-width: 767px) {

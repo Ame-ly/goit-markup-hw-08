@@ -685,6 +685,8 @@ img {
 .footer-input {
   display: inline-block;
   height: 50px;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -700,6 +702,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-input {
+    width: 358px;
     margin-top: 20px;
   }
 }
@@ -711,9 +714,9 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer-input {
-    width: 358px;
+    width: 450px;
   }
 }
 
