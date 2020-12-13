@@ -17,7 +17,7 @@
     top: 50%;
     left: 0;
     fill: $title-text-color;
-    
+
     transform: translate(15px, -50%);
   }
 
@@ -117,23 +117,18 @@
 }
 
 .field-checkbox {
-  
   position: relative;
- display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 1199px) {
-     text-align: center;
-     padding-left: 24px;
-  }
- 
-  @media screen and (min-width: 1200px) {
-   
-  padding-left: 24px;
-    
-  
+    text-align: center;
+    padding-left: 24px;
   }
 
+  @media screen and (min-width: 1200px) {
+    padding-left: 24px;
+  }
 
   & .checkbox-caption {
     font-size: 12px;
@@ -151,10 +146,9 @@ align-items: center;
 
 .checkbox-icon::before {
   position: absolute;
- top: -1px;
+  top: -1px;
   @media screen and (max-width: 1199px) {
-     
-  left: 3px;
+    left: 3px;
   }
   @media screen and (min-width: 1200px) {
     left: 8px;
@@ -216,12 +210,12 @@ align-items: center;
 // }
 
 .form-field-footer {
-   margin-right: auto;
+  margin-right: auto;
   margin-left: auto;
-  
-   @media screen and (max-width: 767px) {
-     width: 358px;
-   }
+
+  @media screen and (max-width: 767px) {
+    width: 358px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -232,34 +226,30 @@ align-items: center;
   }
 }
 
-
 .footer-input {
   display: inline-block;
   height: 50px;
-margin-right: auto;
+  margin-right: auto;
   margin-left: auto;
- 
   padding-left: 16px;
   @media screen and (min-width: 1200px) {
-     width: 358px;
+    width: 358px;
     margin-top: 20px;
   }
- @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     width: 100%;
-     margin-top: 20px;
+    margin-top: 20px;
   }
 
-  @media screen and (min-width: 767px) and (max-width: 1199px){
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
     width: 450px;
   }
 
   @media screen and (max-width: 767px) {
     max-width: 450px;
     min-width: 200px;
-    width: 100%; 
-    
+    width: 100%;
   }
-
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
