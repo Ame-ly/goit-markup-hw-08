@@ -583,14 +583,22 @@ img {
 }
 
 .field-checkbox {
-  display: block;
   position: relative;
-  text-align: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .field-checkbox {
+    text-align: center;
+    padding-left: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .field-checkbox {
-    text-align: center;
+    padding-left: 24px;
   }
 }
 
@@ -600,7 +608,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .field-checkbox .checkbox-caption {
     line-height: 1.172;
   }
@@ -615,8 +623,7 @@ img {
 
 .checkbox-icon::before {
   position: absolute;
-  top: 4px;
-  left: 5px;
+  top: -1px;
   display: inline-block;
   content: "";
   width: 16px;
@@ -628,9 +635,16 @@ img {
   background-image: url(../images/Vector-policy.svg);
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox-icon::before {
+    left: 3px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .checkbox-icon::before {
-    left: 0;
+    left: 8px;
+    top: 4px;
   }
 }
 
@@ -672,13 +686,24 @@ img {
 .form-field-footer {
   margin-right: auto;
   margin-left: auto;
-  width: 358px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-field-footer {
+    width: 358px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-field-footer {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-field-footer {
+    width: 358px;
   }
 }
 
@@ -1163,6 +1188,26 @@ img {
   .footer-right {
     padding-top: 60px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .center-footer,
+  .footer-right {
+    padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-left {
+    padding-left: 76px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .center-footer {
+    padding-right: 89px;
+    padding-top: 65px;
   }
 }
 

@@ -111,12 +111,35 @@
     text-align: center;
   }
 }
+
+.center-footer,
 .footer-right {
+    @media screen and (min-width: 1200px){
+    padding-top: 12px;
+    }
+}
+
+
+.footer-left {
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+   }
+}
+
+.center-footer {
+  
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 89px;
+    padding-top: 65px;
+   }
+}
+
+.footer-right {
+
   @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
   }
  @media screen and (max-width: 767px) {
-   
   padding-bottom: 60px;
   }
 }

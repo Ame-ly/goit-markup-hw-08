@@ -60,6 +60,11 @@
   }
 }
 
+// .form {
+//   justify-content: center;
+//   align-items: center;
+// }
+
 .form-field:focus-within .input,
 .form-field-area:focus-within .input {
   border: 1px solid $accent-text-color;
@@ -112,20 +117,29 @@
 }
 
 .field-checkbox {
-  display: block;
+  
   position: relative;
-
+ display: flex;
+justify-content: center;
+align-items: center;
   @media screen and (max-width: 1199px) {
+     text-align: center;
+     padding-left: 24px;
   }
-  text-align: end;
+ 
   @media screen and (min-width: 1200px) {
-    text-align: center;
+   
+  padding-left: 24px;
+    
+  
   }
+
+
   & .checkbox-caption {
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.03em;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       line-height: 1.172;
     }
     @media screen and (min-width: 1200px) {
@@ -137,10 +151,14 @@
 
 .checkbox-icon::before {
   position: absolute;
-  top: 4px;
-  left: 5px;
+ top: -1px;
+  @media screen and (max-width: 1199px) {
+     
+  left: 3px;
+  }
   @media screen and (min-width: 1200px) {
-    left: 0;
+    left: 8px;
+    top: 4px;
   }
   display: inline-block;
   content: "";
@@ -163,6 +181,10 @@
   color: $accent-text-color;
   text-decoration: none;
 }
+// .field-checkbox .checkbox-center  {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 .submit-button {
   border: none;
@@ -196,10 +218,17 @@
 .form-field-footer {
    margin-right: auto;
   margin-left: auto;
-  width: 358px;
+  
+   @media screen and (max-width: 767px) {
+     width: 358px;
+   }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
