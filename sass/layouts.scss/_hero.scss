@@ -42,7 +42,7 @@
      height: 600px;
     background-image:  $gradient, url('../images/hero/tablet/img-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image:$gradient,  url('../images/hero/tablet/img-hero@2x.jpg');
+      background-image: $gradient,  url('../images/hero/tablet/img-hero@2x.jpg');
     }
    
   }
